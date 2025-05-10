@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>gerador de memes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>gerador de memes</h1>
+  <input type="file" id="imageLoader" name="imageLoader" accept="image/*">
+  <br>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <div id="controls">
+    <input type="text" id="topText" placeholder="texto superior">
+    <input type="text" id="bottomText" placeholder="texto inferior">
+    <br>
+    <label for="fontSize">tamanho da fonte:</label>
+    <input type="number" id="fontSize" value="30">
+    <label for="fontColor">cor da fonte:</label>
+    <input type="color" id="fontColor" value="#FFFFFF">
+    <label for="fontFamily">fonte:</label>
+    <select id="fontFamily">
+      <option value="Impact">Impact</option>
+      <option value="Arial">Arial</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="Times New Roman">Times New Roman</option>
+    </select>
+    <br>
+    <button id="saveMeme">salvar meme</button>
+    <button id="shareMeme">compartilhar meme</button>
+    <button id="drawRect">desenhar retângulo</button>
+    <button id="drawCircle">desenhar círculo</button>
+    <button id="freeDraw">desenho livre</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
